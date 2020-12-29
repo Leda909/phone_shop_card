@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <title>Phone Shopping Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/frame.css">
+
+    <script src="js/OrderPage.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-10">
+   
+            <div class="col-xl-6" id="Pb" > <!-- Start of Picture block -->
+                <img src="images/phone.jpg" id="Pic" >
+            </div>    
+                    
+            <div  class="col-xl-6" id="Tb"> <!--  Start of Right side / Text upper block -->
+                <table id="table1"> 
+                    <thead>
+                        <tr>
+                            <th>Please, make your selection:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td1">Model:</td>
+                            <td class="td2">
+                                <select name="model" id="M" onchange="Mchange(value);" required>
+                                    <option value="">----Select a model----</option>
+                                    <option value="iPhone 7 Plus">Iphone 7 Plus</option>
+                                    <option value="iPhone 11">iPhone 11</option>
+                                    <option value="iPhone XR">iPhone XR</option>
+                                </select>
+                                <div id="error_model" style="color:rgb(25, 149, 41); font-weight: bold;"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Colour:</td>
+                            <td class="td2">
+                                <select name="color" id="C" onchange="Cchange(value);" required>
+                                    <option value="">----Select a colour----</option>
+                                    <option value="Black">Black</option>
+                                    <option value="Gold">Gold</option>
+                                    <option value="White">White</option>
+                                </select>
+                                <div id="error_color" style="color:rgb(25, 149, 41); font-weight: bold;"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Quantity:</td>
+                            <td class="td2">
+                                <input id="Q" onchange="Qchange(value)" type="number" required>
+                                <div id="error_quantity" style="color:rgb(25, 149, 41); font-weight: bold;"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Unit price:</td>
+                            <td class="td2" id="Up"></td>
+                        </tr>          
+                    </tbody>
+                </table> <!-- End of of Table 1> -->
+                <table id="table2">
+                    <thead>
+                        <tr>
+                            <th>You selected the following</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td1">Model:</td>
+                            <td class="td2" id="ModelType"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Colour:</td>
+                            <td class="td2" id="ColorType"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Quantity:</td>
+                            <td class="td2" id="QuantityType"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Total price:</td>
+                            <td class="td2" id="Tp"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-right: 75px;">
+                                <!-- <input class="buttons" type="submit" value="Submit"> -->
+                                <button class="buttons" onclick="submit()">
+                                    <p>Submit</p>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>  <!-- End of of Table 2> -->      
+            </div>   <!--End of Right side -->
+
+            <div class="col-xl-6" id="result"></div>
+        </div>  
+
+        <div class="col-xl-10">
+            <div class="contact row">
+                <img onclick="email()" src="images/email.png">
+                <img onclick="phone()" src="images/phone.png">
+                <p id="contactinfo"></p>
+            </div>
+        </div>  
+    </div>
+</div>
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";} 
+    else {
+      x.style.display = "block";}
+  }
+                  
+  function email() {
+    document.getElementById('contactinfo').innerHTML="Email: ko9zad@gmail.com"
+  }
+        
+  function phone() {
+    document.getElementById('contactinfo').innerHTML="Phone number:  + 44 765 2334"
+  }   
+</script>
+
+</body>
+</html> 

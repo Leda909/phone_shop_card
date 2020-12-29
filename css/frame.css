@@ -1,0 +1,145 @@
+* {
+  padding:0; 
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:Arial;
+  background-image: url("../images/bg.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+/* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+ }
+
+.container {
+  height: 600px;
+  width: 100%;
+  margin-top:15px;
+}
+
+.col-xl-10 {
+  margin-left: auto; 
+  margin-right: auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.col-xl-6 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#Pic{
+  height:75%;
+  width: 100%;
+}
+
+#Pb, #Tb {
+  height: inherit;
+  float: left;
+  border: 2px solid midnightblue;
+}
+
+#Pb{
+  background-color: rgb(243, 210, 232);
+  align-items: center;
+  height:99.8%;
+  padding-top:99px;;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#table1{
+  width: 100%;
+  height: 49.6%;
+  background-color: rgb(236, 189, 222);
+  border-collapse: collapse;
+  /* border: 1px solid black; */
+  color: midnightblue;
+}
+
+#table2{
+  width: 100%;
+  height: 49.99%;
+  background-color: rgb(214, 162, 198);
+}
+
+th{
+  text-align: left;
+  padding: 15px
+}
+
+tr{
+  height: 45px;
+  /* border: 1px dashed blue; */
+}
+
+.td1{
+  padding-left: 50px;
+}
+
+.td2{
+  padding-right: 50px;
+}
+
+.buttons {
+  height: 34px;
+  width: 85px;
+  background-color: rgb(67, 67, 126);
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  border: 2px solid rgb(204, 204, 253);
+}
+
+.buttons:hover {
+  background: rgb(125, 125, 214);
+  color: midnightblue;
+  border: 4px solid rgb(56, 56, 114);
+}
+  
+.right{
+  float: right;
+}
+
+
+#result{
+  background-color: rgb(216, 173, 203);
+  float:left;
+  height: 581px;
+  padding: 20px;
+  display:none;
+  border: 2px solid midnightblue;
+  border-radius: inherit;
+}
+
+#result h4{
+  color:midnightblue;
+  text-align: justify;
+  margin: 10px;
+  font-size:17px;
+}
+
+#result h5{
+  color:midnightblue;
+  text-align: left;
+  margin: 10px;
+  padding-left: 50px;
+  font-size:14px;
+}
+
+.contact{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#contactinfo{
+    color:#29746f;
+    padding-left:30px;
+    padding-top: 10px;
+    font-size: 24px;
+}
